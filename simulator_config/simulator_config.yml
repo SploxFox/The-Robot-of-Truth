@@ -1,0 +1,38 @@
+!!com.snobot.simulator.config.v1.SimulatorConfigV1
+mAccelerometers: []
+mAnalogIn: []
+mAnalogOut: []
+mDefaultI2CWrappers: {}
+mDefaultSpiWrappers: {}
+mDigitalIO: []
+mEncoders: []
+mGyros: []
+mPwm:
+- mHandle: 100
+  mMotorModelConfig: null
+  mMotorSimConfig: !!com.snobot.simulator.motor_sim.SimpleMotorSimulationConfig
+    mMaxSpeed: 1.0
+  mName: CAN SC 0
+  mType: com.snobot.simulator.simulator_components.ctre.CtreTalonSrxSpeedControllerSim
+- mHandle: 101
+  mMotorModelConfig: null
+  mMotorSimConfig: null
+  mName: CAN SC 1
+  mType: com.snobot.simulator.simulator_components.ctre.CtreTalonSrxSpeedControllerSim
+- mHandle: 102
+  mMotorModelConfig: null
+  mMotorSimConfig: null
+  mName: CAN SC 2
+  mType: com.snobot.simulator.simulator_components.ctre.CtreTalonSrxSpeedControllerSim
+- mHandle: 103
+  mMotorModelConfig: null
+  mMotorSimConfig: null
+  mName: CAN SC 3
+  mType: com.snobot.simulator.simulator_components.ctre.CtreTalonSrxSpeedControllerSim
+mRelays: []
+mSimulatorComponents:
+- !!com.snobot.simulator.simulator_components.config.TankDriveConfig
+  mGyroHandle: 1
+  mLeftMotorHandle: 100
+  mRightMotorHandle: 102
+  mTurnKp: 1.0
